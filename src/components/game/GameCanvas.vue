@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { TresCanvas } from "@tresjs/core";
 import CameraOrbitControls from "./scene/CameraOrbitControls.vue";
+import PhysicsCrates from "./scene/PhysicsCrates.vue";
 import SceneEnvironment from "./scene/SceneEnvironment.vue";
 import SceneWorld from "./scene/SceneWorld.vue";
 
@@ -34,5 +35,6 @@ function handleError(error: Error) {
     <CameraOrbitControls />
     <SceneEnvironment />
     <SceneWorld />
+    <PhysicsCrates />
   </TresCanvas>
 </template>

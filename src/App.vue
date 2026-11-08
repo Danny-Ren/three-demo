@@ -21,7 +21,7 @@ function handleError(message: string) {
         <p class="eyebrow">Prototipo 3D para navegador</p>
         <h1>Three Demo</h1>
       </div>
-      <span class="badge">Etapa 2 · Escena 3D</span>
+      <span class="badge">Etapa 3 · Física</span>
     </header>
 
     <p v-if="isReady" class="hint">Arrastra para orbitar · Rueda para acercar</p>
