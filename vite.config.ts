@@ -1,3 +1,4 @@
+import { templateCompilerOptions } from "@tresjs/core";
 import vue from "@vitejs/plugin-vue";
 import { defineConfig, lazyPlugins } from "vite-plus";
 
@@ -12,5 +13,5 @@ export default defineConfig({
     rules: { "vite-plus/prefer-vite-plus-imports": "error" },
     options: { typeAware: true, typeCheck: true },
   },
-  plugins: lazyPlugins(() => [vue()]),
+  plugins: lazyPlugins(() => [vue({ ...templateCompilerOptions })]),
 });
